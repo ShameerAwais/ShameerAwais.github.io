@@ -142,4 +142,43 @@ if (heroText) {
     
     // Start typing effect after a short delay
     setTimeout(typeWriter, 1000);
-} 
+}
+
+// Generate Favicon
+function generateFavicon() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 32;
+    canvas.height = 32;
+    const ctx = canvas.getContext('2d');
+
+    // Set background
+    ctx.fillStyle = 'transparent';
+    ctx.fillRect(0, 0, 32, 32);
+
+    // Set text style
+    ctx.fillStyle = '#2d3436';
+    ctx.font = 'bold 20px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // Draw text
+    ctx.fillText('RR', 16, 16);
+
+    // Create favicon link element
+    const link = document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = canvas.toDataURL('image/x-icon');
+    
+    // Remove existing favicon if any
+    const existingFavicon = document.querySelector('link[rel="shortcut icon"]');
+    if (existingFavicon) {
+        document.head.removeChild(existingFavicon);
+    }
+    
+    // Add new favicon
+    document.head.appendChild(link);
+}
+
+// Call the function when the page loads
+generateFavicon(); 

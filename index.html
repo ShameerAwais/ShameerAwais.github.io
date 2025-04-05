@@ -254,7 +254,7 @@
             <h2>Get in Touch</h2>
             <div class="contact-content">
                 <p>I'm always available for exciting opportunities and discussions. Feel free to request my resume!</p>
-                <form action="https://formspree.io/f/mnnpgkgq" method="POST" class="contact-form">
+                <form action="https://formspree.io/f/mnnpgkgq" method="POST" class="contact-form" id="contact-form">
                     <div class="form-group">
                         <input type="text" id="name" name="Full Name" placeholder="Your Name" required>
                     </div>
@@ -270,8 +270,19 @@
                             Request Resume
                         </label>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
                 </form>
+                <div class="popup" id="success-popup">
+                    <div class="popup-content">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent successfully!</p>
+                    </div>
+                </div>
                 <div class="contact-info">
                     <a href="mailto:riazrooshan@gmail.com" class="contact-item">
                         <i class="fas fa-envelope"></i>

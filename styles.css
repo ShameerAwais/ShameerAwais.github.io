@@ -737,4 +737,57 @@ footer {
     .submit-btn {
         width: 100%;
     }
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: none;
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.popup-content i {
+    font-size: 1.25rem;
+    color: #4CAF50;
+}
+
+.popup.show {
+    display: flex;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-loading {
+    display: none;
+}
+
+.submit-btn.loading .btn-text {
+    display: none;
+}
+
+.submit-btn.loading .btn-loading {
+    display: inline-block;
 } 

@@ -10,43 +10,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Form submission handling
 const contactForm = document.getElementById('contact-form');
+const submitBtn = contactForm.querySelector('.submit-btn');
+const popup = document.getElementById('success-popup');
+
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Get form data
-        const formData = new FormData(this);
-        const formObject = {};
-        formData.forEach((value, key) => {
-            formObject[key] = value;
-        });
-
-        // Here you would typically send the data to a server
-        // For now, we'll just log it and show a success message
-        console.log('Form submitted:', formObject);
+        // Show loading state
+        submitBtn.classList.add('loading');
         
-        // Show success message
-        const successMessage = document.createElement('div');
-        successMessage.className = 'success-message';
-        successMessage.textContent = 'Thank you for your message! I will get back to you soon.';
-        successMessage.style.cssText = `
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-top: 1rem;
-            text-align: center;
-        `;
-        
-        this.appendChild(successMessage);
-        
-        // Clear form
-        this.reset();
-        
-        // Remove success message after 5 seconds
-        setTimeout(() => {
-            successMessage.remove();
-        }, 5000);
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // Show success popup
+                popup.classList.add('show');
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Hide popup after 3 seconds
+                setTimeout(() => {
+                    popup.classList.remove('show');
+                }, 3000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Sorry, there was an error sending your message. Please try again.');
+        } finally {
+            // Remove loading state
+            submitBtn.classList.remove('loading');
+        }
     });
 }
 

@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="./resume.pdf" download class="nav-brand" onclick="event.preventDefault(); window.open('./resume.pdf', '_blank');">
+        <a href="#contact" class="nav-brand tooltip" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});" title="Contact me for Resume">
             <span class="resume-text">Resume</span>
-            <i class="fas fa-download"></i>
+            <i class="fas fa-envelope"></i>
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@
         <section id="about" class="hero">
             <div class="hero-content">
                 <h1><span class="hi-text">Hi</span>, I'm Rooshan Riaz</h1>
-                <p class="subtitle">I am a Cybersecurity Engineer from Pakistan. Passionate about securing digital systems and protecting against cyber threats.</p>
+                <p class="subtitle">I am a Cybersecurity Student from Pakistan. Passionate about securing digital systems and protecting against cyber threats.</p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/riazrooshan" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/rooshanriaz" target="_blank"><i class="fab fa-github"></i></a>
@@ -253,7 +253,25 @@
         <section id="contact" class="section">
             <h2>Get in Touch</h2>
             <div class="contact-content">
-                <p>I'm always available for exciting opportunities and discussions</p>
+                <p>I'm always available for exciting opportunities and discussions. Feel free to request my resume!</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="request_resume" id="request_resume">
+                            Request Resume
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
                 <div class="contact-info">
                     <a href="mailto:riazrooshan@gmail.com" class="contact-item">
                         <i class="fas fa-envelope"></i>

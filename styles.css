@@ -104,57 +104,68 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 0;
-    position: relative;
-    background: var(--white);
+    justify-content: center;
+    background: var(--light-bg);
     box-shadow: none;
 }
 
-.hero::before {
-    display: none !important;
+.hero-card {
+    background: var(--card-bg);
+    box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.10);
+    border-radius: 2rem;
+    padding: 3rem 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
-.hero-content {
-    max-width: 700px;
-}
-
-.hero h1 {
-    background: none;
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
     color: var(--primary-color);
-    animation: fadeInUp 1s ease-out;
+    margin-bottom: 0.5rem;
 }
 
 .hi-text {
     color: var(--secondary-color);
+    font-weight: 700;
 }
 
-.subtitle {
-    font-size: 1.5rem;
+.hero-bio {
+    font-size: 1.35rem;
     color: var(--text-color);
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.social-links {
+.hero-socials {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
-.social-links a {
-    background: var(--light-bg);
-    color: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(45, 52, 54, 0.08);
-    border: 1px solid #e0e0e0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links a:hover {
-    background: var(--secondary-color);
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background: var(--primary-color-light);
     color: var(--white);
-    transform: translateY(-2px) scale(1.08);
-    box-shadow: 0 4px 16px rgba(9, 132, 227, 0.15);
+    font-size: 1.6rem;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.10);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.social-icon:hover {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    transform: translateY(-4px) scale(1.08);
 }
 
 /* Sections */
@@ -905,4 +916,22 @@ footer {
 body.dark-mode {
     background-color: var(--light-bg);
     color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    .hero-card {
+        padding: 2rem 1rem;
+        max-width: 95vw;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-bio {
+        font-size: 1.05rem;
+    }
+    .social-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 1.2rem;
+    }
 } 

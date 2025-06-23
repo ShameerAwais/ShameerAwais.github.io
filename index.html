@@ -25,6 +25,9 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
     </nav>
 
     <main class="container">
@@ -332,5 +335,30 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      // Theme toggle logic
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      const icon = themeToggle.querySelector('i');
+      function setTheme(dark) {
+        if (dark) {
+          body.classList.add('dark-mode');
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else {
+          body.classList.remove('dark-mode');
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        }
+      }
+      // Load theme from localStorage
+      const darkPref = localStorage.getItem('theme') === 'dark';
+      setTheme(darkPref);
+      themeToggle.addEventListener('click', () => {
+        const isDark = body.classList.toggle('dark-mode');
+        setTheme(isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    </script>
 </body>
 </html> 

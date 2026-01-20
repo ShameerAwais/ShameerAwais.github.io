@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shameer Awais - Cybersecurity Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#contact" class="nav-brand" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});">
+            <span>Resume</span>
+            <i class="fas fa-envelope"></i>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="hero">
+            <div class="hero-card">
+                <div>
+                    <h1 class="hero-title">
+                        <span>Cybersecurity Engineer</span>
+                        Muhammad Shameer Awais
+                    </h1>
+                    <p class="hero-highlight">
+                        Penetration testing, cloud security & secure software engineering — with a focus on practical, hands-on defense and offense.
+                    </p>
+                    <p class="hero-bio">
+                        Cybersecurity student at GIKI and recent VAPT intern at the National Cyber Emergency Response Team (PKCERT),
+                        working across exploitation, digital forensics, DevSecOps, and cloud-native security.
+                    </p>
+                    <div class="hero-meta">
+                        <span class="pill">VAPT & Red Teaming</span>
+                        <span class="pill">Cloud & DevOps</span>
+                        <span class="pill">Secure Software Design</span>
+                        <span class="pill pill--soft">Multan & Swabi, Pakistan</span>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/shameer-awais-b89239253/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ShameerAwais" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i><span>GitHub</span>
+                        </a>
+                        <a href="#projects" class="social-icon">
+                            <i class="fas fa-code"></i><span>View Projects</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-side">
+                    <div class="hero-location">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Multan, Pakistan · Open to security & DevSecOps roles</span>
+                    </div>
+                    <div class="hero-summary-card">
+                        <p>
+                            6-week VAPT internship at PKCERT (Windows & web exploitation, AV/EDR bypass),
+                            hands-on work in malware forensics, SIEM-driven detection, and secure cloud architectures.
+                        </p>
+                    </div>
+                    <div class="hero-contacts">
+                        <a href="mailto:shameerawais16@gmail.com">shameerawais16@gmail.com</a>
+                        <a href="tel:+923008636060">+92 300 8636060</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-tagline">Foundations in security, systems & networking</p>
+            </div>
+            <div class="education-item">
+                <div class="education-main">
+                    <a href="https://giki.edu.pk/" target="_blank" class="institution">
+                        <img src="./images/giki_logo_2.png" alt="GIKI Logo" class="university-logo">
+                    </a>
+                    <div>
+                        <h3 class="education-title">B.Sc. in Cyber Security</h3>
+                        <p class="education-meta">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology · GPA: 3.02/4.00</p>
+                        <p class="education-meta">Swabi, Pakistan</p>
+                    </div>
+                </div>
+                <div class="education-year">Sept 2022 – Present</div>
+            </div>
+            <div class="courses-section">
+                <h3>Relevant Coursework</h3>
+                <div class="courses-list">
+                    <span class="course-item">Network Security</span>
+                    <span class="course-item">Information Security</span>
+                    <span class="course-item">Secure Software Engineering</span>
+                    <span class="course-item">Digital Forensics</span>
+                    <span class="course-item">Operating Systems</span>
+                    <span class="course-item">Computer Networking</span>
+                    <span class="course-item">Cryptography</span>
+                    <span class="course-item">Database Design</span>
+                    <span class="course-item">Artificial Intelligence</span>
+                    <span class="course-item">Object Oriented Programming</span>
+                    <span class="course-item">Data Structures & Algorithms</span>
+                    <span class="course-item">DevOps</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-tagline">Hands-on security work & training design</p>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Vulnerability Assessment & Penetration Testing Intern</h3>
+                            <div class="experience-meta">
+                                <span class="experience-company">National Cyber Emergency Response Team (NCERT / PKCERT)</span>
+                                <span>July 2025 – August 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Performed exploitation and security assessment of Windows 7, 10 and 11 environments.</li>
+                        <li>Demonstrated AV/EDR bypass techniques using payload encryption, obfuscation and custom loaders.</li>
+                        <li>Conducted web application penetration testing on internal PKCERT platforms, reporting high-impact findings.</li>
+                        <li>Used tools such as Burp Suite, Metasploit, Wireshark and custom scripts for exploitation and analysis.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Cybersecurity Training Development Intern</h3>
+                            <div class="experience-meta">
+                                <span class="experience-company">National Cyber Emergency Response Team (NCERT / PKCERT)</span>
+                                <span>July 2025 – August 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Designed cybersecurity trainings for 40+ government ministries (CISSP, CISA, CISM).</li>
+                        <li>Co-designed PKCERT Cyber Resilience Summit & Bootcamp 2025.</li>
+                        <li>Created the CIGRA certification, integrating IT governance and risk management.</li>
+                        <li>Researched global cybersecurity initiatives to strengthen national cyber resilience.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Highlighted Projects</h2>
+                <p class="section-tagline">Security engineering, cloud and research work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Featured / pinned projects -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3>FinTech API for Core Banking Security</h3>
+                            <p class="project-badge">Final Year Project · In progress</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShameerAwais" target="_blank" class="project-link" aria-label="GitHub repository">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="project-description">
+                        <li>Designing a modular FinTech API integrating with core banking systems, with AI-driven fraud detection and blockchain-backed audit trails.</li>
+                        <li>Implementing dynamic RBAC, MFA and OAuth2/OIDC to secure access and mitigate insider threats.</li>
+                        <li>Building compliant, tamper-proof logging and reporting aligned with KYC/AML, GDPR, PSD2 and PCI DSS.</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">API Security</span>
+                        <span class="tech-tag">RBAC</span>
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Hunting Stealthy Malware via Data Provenance Analysis</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Built a pipeline to extract OS-level provenance graphs (process, file and system interactions) for threat hunting.</li>
+                            <li>Trained embedding models and novelty detectors to flag subtle behavioral anomalies missed by traditional AV.</li>
+                            <li>Evaluated detection accuracy and false positives on benchmark malware datasets.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Provenance Graphs</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Malware Detection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Vulnerability Assessment with SIEM Monitoring</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Built an end-to-end vulnerability assessment and monitoring setup using Wazuh SIEM.</li>
+                            <li>Simulated attacks to test detection rules and tuned alerts for actionable signal.</li>
+                            <li>Created dashboards and pipelines for real-time security event visibility.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Wazuh</span>
+                            <span class="tech-tag">SIEM</span>
+                            <span class="tech-tag">Vulnerability Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Forensic Analysis of WannaCry Ransomware</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais/Forensic-Analysis-of-Ransomware-Attack" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Performed disk and memory forensics using Autopsy and Volatility.</li>
+                            <li>Identified WannaDecryptor.exe and suspicious processes; verified IoCs via VirusTotal.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Autopsy</span>
+                            <span class="tech-tag">Volatility</span>
+                            <span class="tech-tag">Malware Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Design & Deployment of Scalable Multi-Tier Cloud Application</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Architected a three-tier cloud application (frontend, API, database) to handle unpredictable traffic.</li>
+                            <li>Automated infrastructure with IaC (Terraform/CloudFormation), including load balancers and autoscaling.</li>
+                            <li>Ensured fault tolerance and high availability using multi-zone redundancy and health checks.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Cloud Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>PhishGuard – Phishing Detection Extension</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais/Secure-Software-Development-and-Engineering-Project" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Built secure browser extension using JavaScript and Node.js.</li>
+                            <li>Integrated ML API for real-time phishing detection.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional projects from GitHub -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Security Audit</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais/Security-Analysis" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Conducted security posture surveys for 50+ organizations and identified critical gaps.</li>
+                            <li>Produced a remediation-focused report summarizing prioritized fixes.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Security Audit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Network Management: CLI vs SDN</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais/Network-Management-CLI-vs-SDN" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Simulated CLI and SDN networks in Cisco Packet Tracer.</li>
+                            <li>Evaluated configuration complexity and scalability.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Cisco Packet Tracer</span>
+                            <span class="tech-tag">SDN</span>
+                            <span class="tech-tag">Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Student Management System</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/ShameerAwais/Student-Management-System" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <ul class="project-description">
+                            <li>Developed GUI-based system with Flask, Python, PostgreSQL for managing student records.</li>
+                            <li>Features include add/update/delete/search with Firebase integration for storage.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="section-tagline" style="margin-top: 1.75rem;">
+                More work and experiments on my GitHub profile:
+                <a href="https://github.com/ShameerAwais" target="_blank" style="color: inherit; text-decoration: underline;">@ShameerAwais</a>
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Cybersecurity</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Vulnerability Assessment</span>
+                        <span class="skill-item">Penetration Testing</span>
+                        <span class="skill-item">IDS/IPS</span>
+                        <span class="skill-item">SIEM</span>
+                        <span class="skill-item">Malware Analysis</span>
+                        <span class="skill-item">Threat Modeling</span>
+                        <span class="skill-item">Wireshark</span>
+                        <span class="skill-item">Snort</span>
+                        <span class="skill-item">ZAP</span>
+                        <span class="skill-item">CodeQL</span>
+                        <span class="skill-item">Autopsy</span>
+                        <span class="skill-item">Volatility</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Programming & Scripting</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Bash</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Secure Coding</span>
+                        <span class="skill-item">Data Structures</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">AWS (EC2, S3, IAM)</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Terraform</span>
+                        <span class="skill-item">GitHub Actions</span>
+                        <span class="skill-item">CI/CD</span>
+                        <span class="skill-item">Linux Administration</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Networking</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">TCP/IP</span>
+                        <span class="skill-item">DNS</span>
+                        <span class="skill-item">HTTP</span>
+                        <span class="skill-item">Cisco CLI</span>
+                        <span class="skill-item">Packet Tracer</span>
+                        <span class="skill-item">SDN</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Databases</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Jira</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">VMware</span>
+                        <span class="skill-item">Metasploit</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <p>I'm always available for exciting opportunities and discussions. Feel free to request my resume!</p>
+                <form action="https://formspree.io/f/mnnpgkgq" method="POST" class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="Full Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="Resume Requested" id="request_resume">
+                            Request Resume
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+                <div class="popup" id="success-popup">
+                    <div class="popup-content">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent successfully!</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:shameerawais16@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>shameerawais16@gmail.com</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+923008636060</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/shameer-awais-b89239253/" class="contact-item" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/ShameerAwais" class="contact-item" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Shameer Awais. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

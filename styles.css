@@ -18,7 +18,8 @@
     --radius-md: 1rem;
     --radius-pill: 999px;
 
-    --max-width: 960px;
+    /* Increase page content width to better use side space */
+    --max-width: 1180px;
 }
 
 *,
@@ -35,6 +36,11 @@ body {
     color: var(--text-main);
     background: radial-gradient(circle at top left, #dbeafe 0, #f9fafb 42%, #e0f2fe 100%);
     font-size: 1.05rem;
+}
+
+html {
+    /* Smooth scrolling for in-page navigation */
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -121,6 +127,11 @@ body {
 /* Layout spacing */
 main {
     margin-top: 5.5rem;
+}
+
+/* Ensure anchored sections are fully visible below fixed navbar */
+section {
+    scroll-margin-top: 6.5rem;
 }
 
 .section {
@@ -537,7 +548,7 @@ main {
 
 /* Contact */
 .contact-content {
-    max-width: 720px;
+    max-width: 860px;
 }
 
 .contact-content p {
@@ -547,7 +558,7 @@ main {
 }
 
 .contact-form {
-    max-width: 620px;
+    max-width: 760px;
     margin-bottom: 2rem;
 }
 
